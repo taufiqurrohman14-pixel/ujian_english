@@ -4,17 +4,58 @@
   <meta charset="UTF-8">
   <title>Ujian English Class – SMPN 1 Klangenan</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 40px; background: #eaf3ff; }
-    img { width: 180px; margin-bottom: 20px; }
-    .warning { color: red; font-weight: bold; margin-top: 20px; }
-    .info { margin-top: 10px; font-size: 14px; }
-    .btn { margin-top: 30px; padding: 10px 20px; font-size: 16px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #eaf3ff;
+    }
+    .logo {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .warning {
+      color: red;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .info {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+    .btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .app-image {
+      width: 180px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo English Class SMPN 1 Klangenan">
+  <img src="assets/logo.png" alt="Logo English Class SMPN 1 Klangenan" class="logo">
   <h1>Ujian English Class</h1>
-  <p>Mohon pastikan Anda membuka halaman ini melalui aplikasi <strong>Exambro E-ujian.id</strong></p>
+
+  <p>
+    Mohon pastikan Anda membuka halaman ini melalui aplikasi <strong>Exambro E-ujian.id</strong> 
+    <br>
+    <em>yang diinstall dari Google Play seperti gambar di bawah ini.</em>
+  </p>
+
+  <img src="assets/exambro-playstore.png" alt="Aplikasi Exambro dari Google Play" class="app-image">
 
   <div class="warning" id="warning"></div>
   <div class="info" id="info"></div>
@@ -31,5 +72,4 @@
     }
   </script>
 </body>
-
 </html>
