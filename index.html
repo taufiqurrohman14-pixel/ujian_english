@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Ujian English Class – SMPN 1 Klangenan</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 40px; background: #eaf3ff; }
+    img { width: 180px; margin-bottom: 20px; }
+    .warning { color: red; font-weight: bold; margin-top: 20px; }
+    .info { margin-top: 10px; font-size: 14px; }
+    .btn { margin-top: 30px; padding: 10px 20px; font-size: 16px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <img src="assets/logo.png" alt="Logo English Class SMPN 1 Klangenan">
+  <h1>Ujian English Class</h1>
+  <p>Mohon pastikan Anda membuka halaman ini melalui aplikasi <strong>Exambro E-ujian.id</strong></p>
+
+  <div class="warning" id="warning"></div>
+  <div class="info" id="info"></div>
+
+  <button class="btn" id="startBtn" style="display:none;" onclick="window.location.href='https://forms.gle/oj7c3vrV3aF5G7cRA'">Mulai Ujian</button>
+
+  <script>
+    const ua = navigator.userAgent.toLowerCase();
+    if (ua.includes("exambro")) {
+      document.getElementById("startBtn").style.display = "inline-block";
+    } else {
+      document.getElementById("warning").innerText = "⚠️ Anda tidak menggunakan aplikasi Exambro.";
+      document.getElementById("info").innerText = "Silakan tutup halaman ini dan buka kembali melalui aplikasi Exambro E-ujian.id.";
+    }
+  </script>
+</body>
+</html>
